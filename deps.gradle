@@ -45,7 +45,7 @@ ext.deps = [
 
         //Greenfit
         greenfit             : "me.yourbay:greenfit:$greenfit",
-        greenfitCompiler     : "me.yourbay:greenfit-conpiler:$greenfit",
+        greenfitCompiler     : "me.yourbay:greenfit-compiler:$greenfit",
 
         // Third Party
         javaparser           : 'com.github.javaparser:javaparser-core:2.4.0',
