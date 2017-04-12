@@ -1,0 +1,68 @@
+//
+def androidToolGradle = "2.3.0"
+def buildToolsVersion = "25.0.2"
+def androidToolsVersion = "25.0.2"
+def androidSupportVersion = '25.2.0'
+//
+def greenfit = "0.1-beta1"
+def okHttpVersion = '3.6.0'
+def retrofitVersion = '2.2.0'
+def butterKnifeVersion = '8.4.0'
+ext.deps = [
+        // Android
+        targetSdkVersion     : 24,
+        compileSdkVersion    : 25,
+        buildToolsVersion    : "$buildToolsVersion",
+        androidToolGradle    : "$androidToolGradle",
+        androidToolsVersion  : "$androidToolsVersion",
+        androidSupportVersion: "$androidSupportVersion",
+
+//        android            : 'com.google.android:android:4.1.1.4',
+        supportTestRunner    : 'com.android.support.test:runner:0.5',
+        androidGradle        : "com.android.tools.build:gradle:$androidToolGradle",
+        lint                 : "com.android.tools.lint:lint:$androidToolsVersion",
+        lintApi              : "com.android.tools.lint:lint-api:$androidToolsVersion",
+        lintChecks           : "com.android.tools.lint:lint-checks:$androidToolsVersion",
+        lintTests            : "com.android.tools.lint:lint-tests:$androidToolsVersion",
+
+        //support
+        design               : "com.android.support:design:$androidSupportVersion",
+        appcompat            : "com.android.support:appcompat-v7:$androidSupportVersion",
+        cardview             : "com.android.support:cardview-v7:$androidSupportVersion",
+        palette              : "com.android.support:palette-v7:$androidSupportVersion",
+        recyclerview         : "com.android.support:recyclerview-v7:$androidSupportVersion",
+        supportAnnotations   : "com.android.support:support-annotations:$androidSupportVersion",
+        supportCompat        : "com.android.support:support-compat:$androidSupportVersion",
+
+        // Square
+        javapoet             : 'com.squareup:javapoet:1.8.0',
+        retrofit             : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+        retrofitGson         : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+        okhttp               : "com.squareup.okhttp3:okhttp:$okHttpVersion",
+        okhttpLog            : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
+        butterknife          : "com.jakewharton:butterknife:$butterKnifeVersion",
+        butterknifeCompiler  : "com.jakewharton:butterknife-compiler:$butterKnifeVersion",
+
+        //Greenfit
+        greenfit             : "me.yourbay:greenfit:$greenfit",
+        greenfitCompiler     : "me.yourbay:greenfit-conpiler:$greenfit",
+
+        // Third Party
+        javaparser           : 'com.github.javaparser:javaparser-core:2.4.0',
+
+        // Test dependencies
+        junit                : 'junit:junit:4.12',
+        truth                : 'com.google.truth:truth:0.28',
+        robolectric          : 'org.robolectric:robolectric:3.1.2',
+        openglApi            : 'org.khronos:opengl-api:gl1.1-android-2.1_r1',
+        compiletesting       : 'com.google.testing.compile:compile-testing:0.9',
+        autoservice          : 'com.google.auto.service:auto-service:1.0-rc2',
+        autocommon           : 'com.google.auto:auto-common:0.6',
+        //
+        javaStream           : 'com.annimon:stream:1.1.3',
+        fresco               : 'com.facebook.fresco:fresco:1.2.0',
+        eventbus             : 'org.greenrobot:eventbus:3.0.0',
+        eventbusCompiler     : "org.greenrobot:eventbus-annotation-processor:3.0.1",
+        // db
+        activeAndroid        : "com.michaelpardo:activeandroid:3.1.0-SNAPSHOT"
+]
